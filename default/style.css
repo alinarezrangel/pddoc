@@ -1,0 +1,30 @@
+/*Creado con pddoc por Alejandro Linarez Rangel*/
+/*Este es un CSS por defecto para tus paginas*/
+section.doc-section { background-color: #eeeeee; margin: 2px; }
+span.doc-section-header { background-color: #DDDDDD; font-size: 2em; display: block; width: 100%; }
+span.doc-section-orden { font-style: bold; color: #ff4400 }
+span.doc-section-type { font-style: bold; color: #006666 }
+span.doc-section-ins { font-style: italic; }
+span.doc-section-attr { font-style: bold; }
+span.doc-section-here { font-style: italic; color: #006666 }
+span.doc-section-des-breve { }
+span.doc-section-arg-name { font-style: italic; }
+span.doc-section-dev-des { font-style: italic; }
+span.doc-section-arg-des { }
+span.doc-section-arg-decl { font-style: bold; }
+footer.docs { background-color: #DDDDDD; font-style: italic; }
+section.doc-index { background-color: #eeeeee; margin: 2px; }
+span.doc-head-index { background-color: #DDDDDD; font-size: 2em; }
+ul.doc-ul-index { list-style-type: none; }
+span.doc-section-arg-ttl { color: #b33b00; }
+span.doc-section-dev-ttl { color: #b33b00; }
+span.doc-section-clss-bs { color: #b33b00; }
+li.doc-li-index { }
+code.doc-section-code-block { display: block; }
+code.block { display: block; border: 1px solid black; width: 90%; }
+span.doc-section-error-ttl { color: #b33b00; }
+span.doc-section-error-secure { color: green; }
+span.doc-section-error-insecure { color: #800800; }
+span.doc-section-error-inestable { color: red; }
+span.doc-section-error-optional { color: #800800; }
+
