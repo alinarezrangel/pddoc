@@ -415,7 +415,7 @@ int main (int argc, char const* argv[])
 	}
 	out << leerTodoElArchivo(foot) << endl;
 	out << "<footer class=\"docs\">Esta documentacion fue creada con ";
-	out << "<a hef=\"https://github.com/alinarezrangel/pddoc\">pddoc</a>.</footer>" << endl;
+	out << "<a href=\"https://github.com/alinarezrangel/pddoc\">pddoc</a>.</footer>" << endl;
 	out << "</body>" << endl;
 	out << "</html>" << endl;
 	in.close();

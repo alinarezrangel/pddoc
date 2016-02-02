@@ -1,0 +1,87 @@
+[ *****************************************
+*** Example1.pd: test para pddoc.
+***************************************** ]
+
+[DOCUMENTA
+@file Test de pddoc
+A continuación, vera una serie de ejemplos de
+la documentación generada por pddoc.
+DOCUMENTA]
+
+[DOCUMENTA
+@brief Saluda a una variable.
+Utiliza la funcion imprimirf de entsal.pseudo
+@arg var Referencia comun a la variable a saludar.
+@errors Active
+DOCUMENTA]
+funcion Saludar
+	[ Realmente no hace nada ]
+finfun
+
+[DOCUMENTA
+@brief Escribe un texto aleatorio.
+Este esta distribuido entre "Hola Mundo",
+"Adios Mundo", "Fin del programa".
+@arg sem Semilla.
+@errors Inactive
+Si la semilla es menor o igual a cero, su comportamiento es
+indefinido.
+DOCUMENTA]
+funcion Texto
+	[ Otra funcion vacia!!! ]
+finfun
+
+[DOCUMENTA
+@brief Es una clase común.
+Esta representa una variable.
+DOCUMENTA]
+clase CG_VAR
+	;ptr
+	:mtd
+#(Final).
+heredar Objeto CG_VAR
+
+[DOCUMENTA
+@brief Es un metodo.
+Este metodo no realiza nada.
+@argyo
+@errors Active
+DOCUMENTA]
+funcion CG_VAR#mtd
+	[ Vaciooo. ]
+finfun
+
+[DOCUMENTA
+@nsection seccion Esta es una sección
+Esta puede ser usada para otros fines, como por ejemplo:
+DOCUMENTA]
+
+[DOCUMENTA
+@nsection ejemplos Ejemplos
+Mira lo facil que es incluir un enlace: <a href="#CG_VAR">CG_VAR</a>.
+A metodos, solo reemplaza cada numeral(#) por un N: <a href="#CG_VARNmtd">CG_VAR#mtd</a>
+Ejemplo de CG_VAR:
+<code class="pseudod block">instancia CG_VAR mvar
+redireccionar mvar#ptr NULO
+llamar mvar#mtd #(Final).
+</code>
+DOCUMENTA]
+
+[ Este codigo no se documenta ]
+funcion NoDocumentada
+	[ ... ]
+finfun
+
+[ pddoc tambien documenta variables y punteros ]
+
+[DOCUMENTA
+@brief Determina si usar C-system()
+Es utilizada por la funcion EjecutarMandato.
+Por defecto es FALSO, dado que system() es malvado!.
+DOCUMENTA]
+adquirir VG_USAR_SYSTEM
+fijar VG_USAR_SYSTEM =¿? FALSO
+
+funcion EjecutarMandato
+	[ ... ]
+finfun

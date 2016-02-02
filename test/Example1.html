@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="../default/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<section class="doc-index">
+<span class="doc-head-index">Indice</span><br/>
+<ul class="doc-ul-index">
+<li class="doc-li-index"><a href="#Saludar">funcion Saludar</a></li>
+<li class="doc-li-index"><a href="#Texto">funcion Texto</a></li>
+<li class="doc-li-index"><a href="#CG_VAR">clase CG_VAR</a></li>
+<li class="doc-li-index"><a href="#CG_VARNmtd">funcion CG_VAR#mtd</a></li>
+<li class="doc-li-index"><a href="#seccion"> Esta es una sección</a></li>
+<li class="doc-li-index"><a href="#ejemplos"> Ejemplos</a></li>
+</ul>
+</section>
+<section class="doc-section">
+
+<span class="doc-section-header"> Test de pddoc</span><br/>
+A  continuación, vera una serie de ejemplos de<br/>
+la  documentación generada por pddoc.<br/>
+<br/></section>
+
+
+<section class="doc-section">
+<a id="Saludar"></a>
+<span class="doc-section-header">funcion Saludar</span><br/>
+<code class="doc-section-code-block"><span class="doc-section-orden">funcion </span><span class="doc-section-ins">Saludar </span>
+<span class="doc-section-arg-decl">var </span>
+</code><br/>
+
+<span class="doc-section-des-breve"> Saluda a una variable.</span><br/>
+Utiliza  la funcion imprimirf de entsal.pseudo<br/>
+<span class="doc-section-arg-ttl">Argumentos</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="doc-section-arg-name">var</span>
+<span class="doc-section-arg-des"> Referencia comun a la variable a saludar.</span><br/>
+<span class="doc-section-error-ttl">Garantia de error: </span><span class="doc-section-error-secure">Esta libre de errores inesperados</span><br/>
+<br/></section>
+
+
+<section class="doc-section">
+<a id="Texto"></a>
+<span class="doc-section-header">funcion Texto</span><br/>
+<code class="doc-section-code-block"><span class="doc-section-orden">funcion </span><span class="doc-section-ins">Texto </span>
+<span class="doc-section-arg-decl">sem </span>
+</code><br/>
+
+<span class="doc-section-des-breve"> Escribe un texto aleatorio.</span><br/>
+Este  esta distribuido entre "Hola Mundo",<br/>
+"Adios  Mundo", "Fin del programa".<br/>
+<span class="doc-section-arg-ttl">Argumentos</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="doc-section-arg-name">sem</span>
+<span class="doc-section-arg-des"> Semilla.</span><br/>
+<span class="doc-section-error-ttl">Garantia de error: </span><span class="doc-section-error-insecure">No esta libre de errores inesperados</span><br/>
+Si  la semilla es menor o igual a cero, su comportamiento es<br/>
+indefinido. <br/>
+<br/></section>
+
+
+<section class="doc-section">
+<a id="CG_VAR"></a>
+<span class="doc-section-header">clase CG_VAR</span><br/>
+<code class="doc-section-code-block"><span class="doc-section-orden">clase </span><span class="doc-section-ins">CG_VAR</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="doc-section-attr">;ptr</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="doc-section-attr">:mtd</span><br/>
+<span class="doc-section-orden">#(Final).</span><br/>
+</code><span class="doc-section-clss-bs">Hereda a </span><span class="doc-section-here">Objeto</span><br/>
+
+<span class="doc-section-des-breve"> Es una clase común.</span><br/>
+Esta  representa una variable.<br/>
+<br/></section>
+
+
+<section class="doc-section">
+<a id="CG_VARNmtd"></a>
+<span class="doc-section-header">funcion CG_VAR#mtd</span><br/>
+<code class="doc-section-code-block"><span class="doc-section-orden">funcion </span><span class="doc-section-ins">CG_VAR#mtd </span>
+<span class="doc-section-arg-decl">Yo </span>
+</code><br/>
+
+<span class="doc-section-des-breve"> Es un metodo.</span><br/>
+Este  metodo no realiza nada.<br/>
+<span class="doc-section-arg-ttl">Argumentos</span><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="doc-section-arg-name">Yo</span>
+<span class="doc-section-arg-des">Referencia com&uacute;n al valor Yo,(PseudoD la pasa automaticamente).</span><br/>
+<span class="doc-section-error-ttl">Garantia de error: </span><span class="doc-section-error-secure">Esta libre de errores inesperados</span><br/>
+<br/></section>
+
+
+<section class="doc-section">
+
+<a name="seccion"></a><span class="doc-section-header"> Esta es una sección</span><br/>
+Esta  puede ser usada para otros fines, como por ejemplo:<br/>
+<br/></section>
+
+
+<section class="doc-section">
+
+<a name="ejemplos"></a><span class="doc-section-header"> Ejemplos</span><br/>
+Mira  lo facil que es incluir un enlace: <a href="#CG_VAR">CG_VAR</a>.<br/>
+A  metodos, solo reemplaza cada numeral(#) por un N: <a href="#CG_VARNmtd">CG_VAR#mtd</a><br/>
+Ejemplo  de CG_VAR:<br/>
+<code  class="pseudod block">instancia CG_VAR mvar<br/>
+redireccionar  mvar#ptr NULO<br/>
+llamar  mvar#mtd #(Final).<br/>
+</code> <br/>
+<br/></section>
+
+
+
+<footer class="docs">Esta documentacion fue creada con <a href="https://github.com/alinarezrangel/pddoc">pddoc</a>.</footer>
+</body>
+</html>
