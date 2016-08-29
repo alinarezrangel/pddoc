@@ -1,0 +1,29 @@
+PDDoc a simple vista puede verse algo complicado de usar, pero realmente
+pddoc fue diseñado para usarse en *makefiles*. La típica estructura de un
+proyecto que utiliza pddoc es:
+
+
+Estructura de un proyecto con pddoc(puedes generarla con pddoc-project)
+
+```
+htdocs/
+    required/                   Documentos necesarios para pddoc.
+    classes/                    Clases de documentos.
+    html/                       Documentación generada
+        styles/                 Hojas de estilo en cascada(CSS)
+        js/                     Documentos JavaScript
+        resources/              Documentos generales(imagenes, etc)
+Makefile                        Makefile para pddoc-project
+generate.pro                    Proyecto de pddoc-project
+config.pdc                      Configuración de PDDoc(**P**D**D**O**C**)
+```
+
+Uso:
+
+```
+pddoc-project new [pname]
+pddoc-project build
+pddoc-project add-class [classname]
+pddoc-project add-class-data [header] [footer] [stylesheet]
+```
+

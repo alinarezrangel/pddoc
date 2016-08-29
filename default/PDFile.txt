@@ -1,0 +1,27 @@
+## Archivo de configuración de PDDoc por defecto.
+## Si usas pddoc-project, este archivo se llamará ``config.pdc''
+## Por defecto, solo existe una clase.
+
+$ROOT htdocs/
+$CLASSES classes/
+$HTOUT html/
+$STYLES html/styles/
+$HEADERS classes/ classes/
+$FOOTERS classes/
+
+$MKDIR_FOR_CLASS yes
+
+$ADD `CLASS` default
+    `HEADER` header1.html header2.html
+    `FOOTER` footer.html
+    `STYLE` style.css
+$END
+
+## default posee el siguiente estruct:
+## default:
+##  htdocs/classes/default/
+##  htdocs/classes/default/header1.html
+##  htdocs/classes/default/header2.html
+##  htdocs/classes/default/footer.html
+##  htdocs/html/styles/default/style.css
+

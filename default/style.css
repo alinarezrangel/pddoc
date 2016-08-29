@@ -1,0 +1,29 @@
+/*Creado con pddoc por Alejandro Linarez Rangel*/
+.doc-section { background-color: #eeeeee; }
+.doc-section-header { background-color: #DDDDDD; font-size: 2em; }
+.doc-section-orden { font-style: bold; background-color: blue; }
+.doc-section-type { font-style: bold; background-color: blue; }
+.doc-section-ins { font-style: italic; background-color: blue; }
+.doc-section-attr { font-style: bold; background-color: green; }
+.doc-section-here { font-style: italic; background-color: green; }
+.doc-section-des-breve { }
+.doc-section-arg-name { font-style: italic; }
+.doc-section-dev-des { font-style: italic; }
+.doc-section-arg-des { }
+.doc-section-arg-decl { font-style: italic; background-color: blue; }
+.docs { background-color: #DDDDDD; font-style: italic; }
+body { background-color: #DDDDDD; font-family: sans-serif; font-size: 16px; color: black; }
+.doc-index { background-color: #eeeeee; }
+.doc-head-index { background-color: #DDDDDD; font-size: 2em; }
+.doc-ul-index { list-style-type: none; }
+.doc-section-arg-ttl { color: #b33b00; }
+.doc-section-dev-ttl { color: #b33b00; }
+.doc-section-code-block { display: block; }
+.doc-li-index { }
+.block { display: block; border: 1px solid black; width: 90%; }
+.doc-section-error-ttl { color: #b33b00; }
+.doc-section-error-secure { color: green; }
+.doc-section-error-insecure { color: #800800; }
+.doc-section-error-inestable { color: red; }
+.doc-section-error-optional { color: #800800; }
+
