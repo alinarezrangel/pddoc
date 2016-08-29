@@ -123,7 +123,7 @@ string Documentar(istream& in,ostream& out,vector<string>& index)
 	}
 	// TODO El section ya debe estar abierta
 	bool isFile = false;
-	bool cbreak = false;
+	bool cbreak = true;
 	bool argCnt = false;
 	while(line != "DOCUMENTA]")
 	{
